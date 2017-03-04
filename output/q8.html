@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<title>form designing</title>
+<style>
+body{
+ padding:50px;
+}
+</style>
+</head>
+<body>
+<form name="f1" method="post" action="">
+<fieldset>
+<legend>Basic Information</legend>
+<TR>
+  <TD>
+     Full Name:
+  </TD>
+  <TD>
+     <input type="text" name="firstname" maxlength=15 pattern="[A-Z a-z]{1-15}" required autofill=on></input>
+  </TD>
+</TR>
+<p></p>
+<TR>
+  <TD>
+     Birth Date:
+  </TD>
+  <TD>
+     <input type="date" name="dob" required></input>
+  </TD>
+</TR>
+<p></p>
+<TR>
+  <TD>
+     Gender:
+  </TD>
+  <TD>
+     <input type="radio" name="gender" value="male" required> Male</input>  <input type="radio" name="gender" value="female" required> Female</input>
+  </TD>
+</TR>
+<p></p>
+<TR>
+  <TD>
+     Address:
+  </TD>
+  <TD>
+     <input type="text" name="add"></input>
+  </TD>
+</TR>
+<p></p>
+<TR>
+  <TD>
+     Phone No:
+  </TD>
+  <TD>
+     <input type=text name="num" maxlength="10" pattern="[0-9]{10}"></input>
+  </TD>
+</TR>
+</fieldset>
+<fieldset>
+<legend>Extra Information</legend>
+<TR>
+  <TD>
+     Interests:
+  </TD>
+  <TD>
+     <input type="checkbox" name="interests" value="books">Books</input>
+     <input type="checkbox" name="interests" value="movies">Movies</input>
+     <input type="checkbox" name="interests" value="videogames">Videogames</input>
+  </TD>
+</TR>
+<p></p>
+<TR>
+  <TD>
+     Favorite Color:
+  </TD>
+  <TD>
+     <input type="color" name="clr"></input>
+  </TD>
+</TR>
+</fieldset>
+<p></p>
+<input type="submit" value="Send Data"></input>
+<input type="reset" value="Reset Form"></input>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aninmation Effect</title>
+</head>
+<style>
+@keyframes demo
+{
+	0% {background-color: white;height: 324px;width :324px; opacity: 0.7;}
+	25% {background-color: white;height: 260px; width:260px; opacity: 1;}
+	50% {background-color: white;height: 324px;width :200px; opacity: 0.7;}
+	75% {background-color: white;height: 260px; width:260px; opacity: 1;}
+	100% {background-color: white;height: 324px;width:324px; opacity: 0.7;}
+}
+.ab:hover{
+width: 545px;
+height: 324px;
+}
+.bc
+{
+	left:50%;
+	top:10px;
+	width: 545px;
+	height: 324px;
+	animation-iteration-count: infinite;
+	position: absolute;
+	animation-duration: 1s;
+	animation-direction:alternate;
+	animation-name: demo;
+
+}
+
+
+</style>
+<body  style="column-count: 2;">
+<table>	
+<img src="images/heart.png" class="ab">
+<br>
+<img src="images/heart.png" class="bc">
+<br>
+</table>
+</body>
+</html>

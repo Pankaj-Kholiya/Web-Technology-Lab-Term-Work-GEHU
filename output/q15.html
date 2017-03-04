@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pankaj Newspaper</title>
+</head>
+<body>
+
+<style type="text/css">
+body {
+background: black;
+margin:0px;
+}
+h1, h2, h3 {
+font-family: georgia, serif;
+}
+header h3.ticker {
+margin: 0;
+color: #004a83;
+font-size: 32px;
+padding:0 0 8px 0;
+border-bottom: 1px solid #bbb;
+}
+header h3.ticker span 
+{
+color: rgb(255, 112, 0);
+}
+
+h1.headline {
+font-weight: normal;
+font-size: 71px;
+margin: 0 0 48px 0;
+}
+.slavery h1 {
+text-align: left;
+font-weight: normal;
+font-size: 43px;
+margin: 0 0 1em 0;
+}
+
+h2.subhead {
+font-weight: bold;
+font-size: 26px;
+}
+
+
+.wrapper {
+background: rgb(247, 246, 240);
+position: relative;
+margin: 0 auto;
+width: 1400px;
+
+padding: 10px 5px;
+}
+
+header {
+}
+div.break {
+clear:both;
+}
+.columns1 {
+margin: 0 10px;
+height: 10px;
+width: 264px;
+float: left;
+
+}
+.columns2 {
+width: 544px;
+float: left;
+padding-right: 6px;
+border-right: 1px solid #BEB8B8;
+margin-right: 6px;
+position: relative;
+
+}
+article p {
+    margin: 1.25em 0;
+    line-height: 20px;
+}
+article.cols2 {
+-moz-column-count:2; /* Firefox */
+-webkit-column-count:2; /* Safari and Chrome */
+column-count:2;}
+.byline {
+border-bottom: 1px solid;
+border-top: 1px solid;
+padding: 6px 0;
+font-weight: bold;
+padding-bottom: 20px;
+}
+
+article.cols4 {
+-moz-column-count:4; /* Firefox */
+-webkit-column-count:4; /* Safari and Chrome */
+column-count:4;
+-moz-column-rule-color:  #ccc;
+       -moz-column-rule-style:  solid;
+       -moz-column-rule-width:  1px;
+       -webkit-column-rule-color:  #ccc;
+       -webkit-column-rule-style: solid ;
+       -webkit-column-rule-width:  1px;}
+
+.cols4 figure img {
+width: 100%;
+border-top: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+
+.cols4 figure {
+width: 100%;
+overflow: visible;
+}
+
+.cols4 figcaption {
+font-weight: normal;
+font-size: 19px;
+font-family: georgia;
+}
+
+.columns4 {
+width: 1088px;
+float: left;
+padding-right: 6px;
+border-right: 1px solid #BEB8B8;
+margin-right: 6px;
+position: relative;
+}
+.columns {
+
+}
+
+.columns div:first-child {
+margin: 0 10px 0 0;
+}
+
+
+.columns div:last-child {
+margin: 0  0 0 10px ;
+}
+div.teasers {
+width: 460px;
+background: rgb(172, 162, 122);
+height: 206px;
+position: relative;
+margin: 5em 0;
+z-index: 2;
+float: left;
+margin: 0 5px;
+}
+
+div.teasers h1 {
+color: white;
+margin: 0;
+padding: 5px;
+font-size: 22px;
+}
+
+div.teasers h2 {
+margin: -7px 0 0 0;
+padding: 5px;
+font-weight: normal;
+font-size: 18px;
+}
+
+
+header header h1.title {
+color:rgb(0, 210, 255);
+text-transform: lowercase;
+margin: -15px 0 0 0;
+padding: 0;
+font-size: 164px;
+
+
+}
+header header h1.title span {
+color: #aca27a;
+margin-right: -0.2em;
+}
+
+header header h2.website {
+margin: -35px 0 48px 0;
+color: red;
+}
+
+header header {
+text-align: right;
+}
+
+div.borgen {
+margin: 0 0 0 5px;
+}
+
+div.student {
+margin: 0 5px 0 0 ;
+}
+
+div.teasers figure {
+position: absolute;
+margin: 0;
+bottom: 0;
+right: 0px;
+width: 230px;
+overflow: hidden;
+}
+
+div.teasers figure img {
+height: 250px;
+display: block;
+}
+
+div.teasers figure.background {
+position: absolute;
+left: 0;
+width: 100%;
+z-index: -1;
+height: 151px;
+}
+
+div.teasers figure.background img {
+
+position: absolute;
+top: -41px;
+}
+
+div.pop.teasers figure {
+width: 479px;
+height: 160px;
+}
+
+div.pop.teasers figure img {
+height: auto;
+}
+
+div.student.teasers figure.background img {
+width: 100%;
+}
+
+.published {
+float: left;
+display: block;
+margin: 7px 0 0 0;
+width: 155px;
+font-family: georgia, serif;
+}
+.published p {
+margin: 4px 0 10px 0;
+font-size: 21px;
+}
+
+.published time {
+color: #004A83;
+font-size: 43px;
+
+}
+
+div.teaser-block {
+border-bottom: 8px solid black;
+padding-bottom: 6px;
+margin-bottom: 6px;
+}
+
+
+}
+figure {
+overflow: hidden;
+margin: 39px;
+padding: 0;
+}
+figure img {
+
+}
+
+figcaption {
+position: relative;
+font-weight: bold;
+font-size: 15px;
+}
+
+.columns2.van-dyck h3 {
+position: absolute;
+right: 0;
+z-index: 2;
+top: -67px;
+background: #f1f1f1;
+padding: 6px;
+font-size: 24px;
+font-weight: normal;
+}
+.just {
+text-align: justify;
+}
+
+.columns1.last {
+margin: 0 0 0 10px;
+width: 275px;
+}
+
+.columns2.van-dyck h2 {
+background: #98BCDB;
+color:#004A83;
+font-size: 28px;
+margin: 0;
+padding: 2px 0 20px 6px;
+}
+
+.columns2.van-dyck h2 span {
+color: white;
+}
+
+.cont {
+border-top: 1px solid #BEB8B8;
+margin: 10px 0;
+padding: 4px 0;
+font-weight: bold;
+
+}
+
+div.foot {
+border-top: 3px solid black;
+margin-top: 1em;
+}
+
+.firstcharacter { float: left; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: Georgia; }
+
+img.lastad {
+width: 197px;
+margin-left: 1px;
+}
+
+</style>
+
+<div class="wrapper">
+<header>
+<h3 class="ticker"><span>Akhilesh Yadav </span>most talked about candidate on Facebook</h3>
+<div class="published">
+<time>Tuesday 21.2.17</time>
+<p>Published in INDIA and Uttrakhand</p>
+<p><strong>Rs.5</strong></p>
+</div>
+<header>
+<h1 class="title"><span>Pankaj</span> Times</h1>
+<h2 class="website"> pankaj.com</h2>
+</header>
+</header>
+<div class="break"></div>
+
+<div class="teaser-block">
+<div class="student teasers">
+<h1>Oculus Rift</h1>
+<h2>V.R gaming is here in the form of Oculus Rift.</h2>
+<figure class="background"><img src="../news/Oculus.jpg"></figure>
+
+</div>
+<div class="pop teasers">
+<h1>40 great facts about 1,000 No 1s</h1>
+<h2>Peter Robinson's pop trivia special</h2>
+<figure><img src="../news/pop.png"></figure>
+</div>
+<div class="borgen teasers">
+<h1>College Life</h1>
+<h2>Boston University interview</h2>
+<figure><img src="../news/30BRIDGET0811.png"></figure>
+<figure class="background"><img src="../news/cast.png"></figure></div>
+<div class="break"></div>
+</div>
+
+
+<div class="columns2">
+<h2 class="subhead">Election Commission revises Uttarakhand poll percentage figures to 65.64%</h2>
+<article class="cols2 just">
+<div class="byline">Kautilya Singh<br/><span>TOI editor</span></div>
+
+<p>DEHRADUN: The Election Commission on Tuesday corrected its poll percentage figures for Uttarakhand saying that 65.64% of the total electorate in the state cast their votes as against 68% announced earlier. Releasing final figures of polling percentage at Dehradun on Tuesday, six days after assembly elections were held in the state, the EC said while the polling percentage had dipped by 1.58%, the number of votes cast had increased. Around 48.7 lakh people exercised their franchise this year while 42.19 lakh had cast their vote in the 2012 assembly elections, the EC said.
+<p>At the end of polling on February 15, chief electoral Officer Radha Raturi had convened a press conference to announce that a record 68% voters had exercised their franchise across the state. She had said the figure was likely to go up further as queues of voters were still standing outside polling booths. She had also claimed that the polling percentage this year had exceeded 67.22% polling of 2012 assembly elections.
+<img src="../news/vote.jpg" style="width: 267px;">
+<p>Out of the 13 districts, Udham Singh Nagar saw maximum polling of 75.79% and the lowest was Almora with 52.81%. Out of the remaining districts, Haridwar recorded 75.69% polling, Uttarakashi 68.29%,Nainital 66.77%, Dehradun 63.45%, Champawat 61.66%, Bageshwar 61.23%, Rudraprayag 61.46%, Pithoragarh 60.58%, Chamoli 60.51%, Tehri 55.4% and Pauri 54.95%.
+<br><p>Among the assembly constituencies, Laksar in Haridwar saw the maximum polling of 81.87 %, followed by Haridwar Rural 81.69%, Piran Kaliyar 81.43 %, Sitarganj 81.21% and Gadarpur 80.71%. On the other side, Sult saw the minimum polling of 45.74%, Chaubattakhal 46.88%, Lansdowne 47.95% and Ghansali 48.79%. There are seven polling stations - four at Purola, one each at Gangolihat, Someshwar and Almora, where not a single vote was cast.
+<p>Out of the 10,685 polling stations, the Halwaheri polling station of Piran Kaliyar seat had the maximum polling of 99.21%, whereas Kaunta polling station in Bhimtal had the minimum polling of 1.35%. Three polling stations saw voting from 1 to 10%, 5 polling stations had 11 to 20% voting, 18 polling stations had 21 to 30%, 152 polling stations had 31 to 40%, 1,146 polling stations had 41 to 50%, 2,506 polling stations had 51 to 60%, 2,896 polling stations had 61 to 70%, 2,336 polling stations had 71 to 80%, 1,406 polling stations had 81 to 90% and 170 polling stations saw a voting of over 90%.<p>
+Sixty-nine of the total 70 assembly seats in the state went to polls on February 15. Polling to Karnaparayag seat in Chamoli district had to be rescheduled to March 9 due to the death of BSP candidate in a road accident there a couple of days before the elections.
+<p>Out of the 10,685 polling stations, the Halwaheri polling station of Piran Kaliyar seat had the maximum polling of 99.21%, whereas Kaunta polling station in Bhimtal had the minimum polling of 1.35%. Three polling stations saw voting from 1 to 10%, 5 polling stations had 11 to 20% voting, 18 polling stations had 21 to 30%, 152 polling stations had 31 to 40%, 1,146 polling stations had 41 to 50%, 2,506 polling stations had 51 to 60%, 2,896 polling stations had 61 to 70%, 2,336 polling stations had 71 to 80%, 1,406 polling stations had 81 to 90% and 170 polling stations saw a voting of over 90%.<p>
+Sixty-nine of the total 70 assembly seats in the state went to polls on February 15. Polling to Karnaparayag seat in Chamoli district had to be rescheduled to March 9 due to the death of BSP candidate in a road accident there a couple of days before the elections.
+<p>Out of the 10,685 polling stations, the Halwaheri polling station of Piran Kaliyar seat had the maximum polling of 99.21%, whereas Kaunta polling station in Bhimtal had the minimum polling of 1.35%. Three polling stations saw voting from 1 to 10%, 5 polling stations had 11 to 20% voting, 18 polling stations had 21 to 30%, 152 polling stations had 31 to 40%, 1,146 polling stations had 41 to 50%, 2,506 polling stations had 51 to 60%, 2,896 polling stations had 61 to 70%, 2,336 polling stations had 71 to 80%, 1,406 polling stations had 81 to 90% and 170 polling stations saw a voting of over 90%.<p>
+Sixty-nine of the total 70 assembly seats in the state went to polls on February 15. Polling to Karnaparayag seat in Chamoli district had to be rescheduled to March 9 due to the death of BSP candidate in a road accident there a couple of days before the elections.
+<p>Out of the 10,685 polling stations, the Halwaheri polling station of Piran Kaliyar seat had the maximum polling of 99.21%, whereas Kaunta polling station in Bhimtal had the minimum polling of 1.35%. Three polling stations saw voting from 1 to 10%, 5 polling stations had 11 to 20% voting, 18 polling stations had 21 to 30%, 152 polling stations had 31 to 40%, 1,146 polling stations had 41 to 50%, 2,506 polling stations had 51 to 60%, 2,896 polling stations had 61 to 70%, 2,336 polling stations had 71 to 80%, 1,406 polling stations had 81 to 90% and 170 polling stations saw a voting of over 90%.<p>
+Sixty-nine of the total 70 assembly seats in the state went to polls on February 15. Polling to Karnaparayag seat in Chamoli district had to be rescheduled to March 9 due to the death of BSP candidate in a road accident there a couple of days before the elections.
+<div class="cont">Continued on page 2 >> </div>
+</article>
+</div> <!-- ends cols2 -->
+
+<div class="columns2 van-dyck">
+<h2><u><span>The Secret of:</span></u> Dark Web</h2>
+
+<figure><img src="../news/2.jpg" style=" margin-left:-34px; height: 1614px;"></figure>
+
+</div>
+
+<div class="columns1 slavery last just"><article>
+<h1>Government planning to re-introduce Rs 1,000 note.</h1>
+<div class="byline"> Is this the new look?</div> 
+
+
+
+<p>Barely three months after Prime Minister Narendra Modi's demonetisation move banning the circulation of Rs 1,000 note, the government is planning to bring back note of similar denomination in a new avatar soon. On November 8, 2016, PM Modi had announced withdrawal of old Rs 500 and 1,000 notes from circulation with immediate effect.
+<p>
+Reports suggest that printing of new Rs 1,000 note has already begun and it may be introduced soon. According to Indian Express , the Reserve Bank of India (RBI) had planned to launch the new note in January but it was delayed as the central bank was pre-occupied with pressing need to supply Rs 500 notes.
+A sample of the new Rs 1,000 is being circulated on social media, however, we can not confirm whether the yet-to-be launched note is similar to photos of which have gone viral. The violet coloured note bears of lot of resemblance with the new Rs 2,000 note. Interestingly, images of new Rs 2,000 note were also leaked on social media prior to its launch.
+<img src="../news/3.jpg" style="width: 280px; height: 160px;  ">
+<p>Realty check: Will demonetisation fulfil roti, kapda aur makaan dreams of genuine buyers?
+By the look of it, the new note will have the security features seen in the Rs 2,000 notes. However, with the counterfeiters managing to copy 11 out of the 17 security features of the new Rs 2,000, the RBI certainly needs to do more.
+<p>Pakistan-based counterfeiters have copied the geometric patterns and the colour scheme both on obverse and the reverse side including watermark, and the exclusive number pattern of the Rs 2,000 currency.
+Down and ouch: Why PM Modi is feeling the 'demon in demonetisation
+In genuine currency, there are 13 features on the front side including two for visually impaired and four on the reverse.
+<div class="cont">Continued on page 4 >> </div>
+<img src="../news/6.jpg" style="width: 280px; height: 386px; ">
+</article>
+</div>
+<div class="break"></div>
+<div class="foot">
+<h1><span>Audi to launch Q5, Q2, Q8, A8</span> and 6 new products in India this year  Advt</h1>
+<article class="cols4 columns4">
+<figure1><img src="../news/4.jpg" style="width: 280px; height: 160px">
+</figure1>
+<p><span class="firstcharacter">A</span>udi is gunning to regain over a period of time the top slot in Indian luxury vehicles segment which it had lost to rival Mercedes-Benz. The company plans to launch ten products this year, including 'a couple of completely new models' as part of its ongoing efforts to enhance its position in the country.
+<p>"For 2017 there will be 10 new launches, out of which there will be a couple of products which haven't been introduced in the Indian market before," said Rahil Ansari, Head, Audi India.
+Audi has already launched the diesel version of its best selling sedan A4 in India. It is also preparing for the new A3 sedan.
+<p>Audi Q5: Audi is currently working on a new generation of the Q5 which is said to make its way to the market in a couple of years, with a new chassis, new looks, technologies and engines. The German manufacturer is putting the finishing touches on the new generation of the Q7, set to be revealed later on this year.
+<p>The bestsellers will remain the traditionally powered versions such as the 2.0-litre TDI which, in its future version, is said to consume 25.6kmpl. Two outputs will be available for the 3.0-litre V6 diesel, one for the regular Q5 and one for the SQ5.
+
+<div class="cont">Continued on page 2 >> </div>
+</article>
+
+
+</div>
+<img src="../news/5.jpg"  class="lastad" style="width: 297px; height: 242px;">
+<div class="break"></div>
+</div>
+
+
+
+</body>
+</html>

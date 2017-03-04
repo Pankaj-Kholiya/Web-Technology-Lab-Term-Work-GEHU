@@ -1,0 +1,73 @@
+<html> 
+<head>
+<title> Customer profile </title> 
+<script language="javascript">
+function details() {
+var cname=document.profile.txt_name.value;
+window.confirm("Have a nice day "+cname);
+document.profile.txt_name.value="";
+}
+</script>
+</head>
+<body><br>
+<h2><center>******* PSK Hotel Services ******</center></h2>
+ 
+<table> <form name="profile">
+ 
+<tr>
+ 
+<td> Name: </td>
+ 
+<td> <input type="text" name="txt_name" maxlength=15 pattern="[A-Z a-z]{1-15}" required autofill=on /> </td> </tr>
+ 
+<tr>
+ 
+<td> Address: </td>
+ 
+<td> <textarea rows="3" cols="25"></textarea> </td>  </tr> <tr>
+ 
+<td> Age:</td>
+ 
+<td> <input type="text" name="txt_age" value="" required/> </td>
+ 
+</tr> <tr>
+ 
+<td>Gender:</td>
+ 
+<td> <input type="radio" name="rd_gender" /> Male &nbsp&nbsp&nbsp
+ 
+<input type="radio" name="rd_gender" /> Female </td>
+ 
+</tr> <tr>
+ 
+<td> Room Type: </td>
+ 
+<td>
+ 
+<select>
+ 
+<option> A/C </option>
+ 
+<option> Non A/C </option>
+ 
+<option> Deluxe </option>
+ 
+</select>  </td>
+ 
+</tr> <tr>
+ 
+<td> Payment type </td>
+ 
+<td> <input type="radio" name="rd_pay" /> Cash &nbsp&nbsp&nbsp&nbsp
+ 
+<input type="radio" name="rd_pay" /> Credit Card &nbsp&nbsp&nbsp&nbsp
+ 
+<input type="radio" name="rd_pay" /> Debit Card &nbsp&nbsp&nbsp&nbsp </td> </tr>
+ 
+<tr>
+ 
+<td> <input type="submit" value="Submit" onClick="details()"/> </td>
+ 
+<td> <input type="reset" value="Cancel" /></td> </tr>
+ 
+</form> </table> </body> </html>
